@@ -1,0 +1,43 @@
+
+=======================
+var express = require('express');
+==> express install korar pore express variable a export korlam express module kon
+
+app = express();
+==>applicaton make korlam r finally uppore j variable espress ase seta k call kore dilam
+
+==> then ai app diye amra get post r o onk kisu korte parbo
+
+app.get("/",function(req,res){
+    res.send('Hello express js');
+})
+app.listen(8000,function(){
+    console.log('server run success....');
+})
+========================
+
+
+
+
+/*======================All Response===========================*/
+1.string response
+2.response status code
+3.download response
+4.response redirect
+5.response header
+6.set response cookie
+7.clear response cookie
+
+
+
+========================
+# browser sudu get methods nibe onnanno method nibena.segulo check korar jonno postman use kore check korte hobe
+
+## res.send()  ==> response er body te msg kore
+
+res.end()  ==> response er ses obosta msg kore
+
+==> res.ststus(401).end()
+  ==status() method a kon status code dibo seta
+  ==status() method k ses korar jonno end() method dite hobe
+========================

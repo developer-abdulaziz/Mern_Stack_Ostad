@@ -1,0 +1,18 @@
+Request post()
+1.Request
+2.Request with url parameter
+3. Request Header
+4.Request Json body
+5.Request Multipart form data
+6.Request File Upload
+
+
+###### multipart form data
+==>jodi kono data form data akare server a post kora hoi post()method er vitore.
+tahole multer npm use korte hobe
+
+==> multer diye data mng korar jonno prothome amra var multer = require('multer') diye import kore nibo
+
+
+// LInk
+https://www.npmjs.com/package/multer
