@@ -1,0 +1,11 @@
+/* ==== writFile ===== */
+fs.writeFile();
+==>aikhane first parameter holo j name a file create korbo se file er name
+==>second parameter a file er ki data ba content thakbe seta dite hobe
+==> third parameter holo callback function dite hobe
+
+
+===**===
+asynchronus poddite callback function thakbe
+
+synchronus poddite callback function thakbe na
