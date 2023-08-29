@@ -172,7 +172,8 @@ app.listen(8010,function(){
 
 
 /*================== File Upload ====================*/
-
+// note ==> sob code likhar pore localhost postman a post request send korar age niche body click => raw data => key te myFile diye file set kore value diye send click.....
+// taholei dekhbo j upload file a select kora valu uplod hoi gase
 //multer diye kivabe file upload korbo 
 
 var express = require('express');
@@ -180,6 +181,7 @@ var multer = require('multer');
 
 var app = express();
 
+// create storage
 var storage = multer.diskStorage({
     destination:function(req,file,callback){
         callback(null,'./upload _02')
@@ -189,6 +191,21 @@ var storage = multer.diskStorage({
     }
 })
 
-app.listen(3000,function(){
+
+var upload = multer({storage:storage}).single('myFile');
+
+app.post("/",function(req,res){
+    upload(req,res,function(error){
+        if(error){
+            res.send('file upload Fail')
+        }
+        else{
+            res.send('file upload success')
+        }
+    })
+})
+
+
+app.listen(4040,function(){
     console.log('server run.......');
 })
