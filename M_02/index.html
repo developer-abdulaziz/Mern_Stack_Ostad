@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+</head>
+<body>
+    <!-- window object -->
+    <!-- <button onclick="objAlert()">Click Alert</button>
+    <button onclick="objConfirm()">Click Confirm</button>
+    <button onclick="objPromt()">Click Promt</button>
+    <button onclick="objOpen()">Click Open</button>
+    <button onclick="objClose()">Click Close</button> -->
+
+
+    <!-- Js Events  -->
+        <button onclick="myEvents('click hoise')">onclick</button>
+        <button onmouseover="myEvents('mouseover hoise')">onmouseover</button>
+        <button onmouseout="myEvents('mouseout hoise')">onmouseout</button><br><br>
+
+        <input onchange="myEvents('change hoise')" type=""> <br>
+        <input onkeydown="myEvents('keydown hosse')" type="text"> <br>
+        <input onkeyup="myEvents('keyup hosse')" type="text"> <br>
+
+
+        <p id="myId"></p>
+        <p class="myClass"></p>
+    <script>
+        /*
+        // window object 
+        function objAlert(){
+            alert('alert me')
+        }
+
+        function objConfirm(){
+            // confirm('Do you want to delete')
+            let result =  confirm('Do you want to delete')
+            document.write(result)
+        }
+
+        function objPromt(){
+            // prompt("write your name")
+            let result = prompt('write your name')
+            document.write(result)
+        }
+
+        function objOpen(){
+            open()
+        }
+
+        function objClose(){
+            close()
+        }
+
+        setTimeout(function(){
+            alert('Alert after 5 mins')
+        },10000)
+        */
+
+
+
+        /* -------------------Navigator object-------------*/
+        /*
+        var appCodeName = navigator.appCodeName;
+        var appName = navigator.appName;
+        var appVersion = navigator.appVersion;
+        var cookieEnabled = navigator.cookieEnabled;
+        var language = navigator.language;
+        var userAgent = navigator.userAgent;
+        var platform = navigator.platform;
+        var online = navigator.onLine;
+
+
+        document.write(appCodeName + "<br>")
+        document.write(appName+"<br>")
+        document.write(appVersion+"<br>")
+        document.write(cookieEnabled+"<br>")
+        document.write(language+"<br>")
+        document.write(userAgent+"<br>")
+        document.write(platform+"<br>")
+        document.write(online+"<br>")
+        */
+
+
+
+        /* -------------------Geolocation-------------*/
+        /*
+        navigator.geolocation.getCurrentPosition(function(position){
+            let altitude = position.coords.altitude;
+            let latitude = position.coords.latitude;
+            let longitude = position.coords.longitude;
+            let speed = position.coords.speed;
+
+            document.write("altitude: "+altitude+"<br>")
+            document.write("latitude: "+latitude+"<br>")
+            document.write("longitude: "+longitude+"<br>")
+            document.write("speed: "+speed+"<br>")
+        })
+        */
+
+
+
+        /* ------------------- Js Events -------------*/
+        // function myEvents(msg){
+        //     console.log(msg);
+        // }
+
+        
+
+        document.getElementById('myId').innerHTML = "Learn Confidently";
+        document.getElementsByClassName('myClass')[0].innerHTML = "Class name shikhtesi"
+    </script>
+</body>
+</html>
