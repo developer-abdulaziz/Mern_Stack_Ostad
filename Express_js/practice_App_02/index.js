@@ -211,3 +211,79 @@ app.listen(4040,function(){
     console.log('server run.......');
 })
 */
+
+
+
+
+/*===================================================== Application Middleware ===========================================*/
+/*note==>next = req jai middlware a . middleware abr next kore response er kase
+
+==> request middlware a jaia execute hoia response dei. orthat request response er maje j execute hoi setai next er kaj
+
+===> application middleware puro application jurei kaj kore.
+puro apllication jure jotogulo req res thakbe sobgulor jonnoi midlleware application execute hobe*/
+
+
+
+/*
+var express = require('express');
+var app = express();
+
+//application middleware
+app.use(function(req,res,next){
+    console.log("I am application level middleware");
+    next();
+})
+
+
+app.get("/",function(req,res){
+    res.send('This is Home page')
+})
+app.get("/about",function(req,res){
+    res.send('This is about page')
+})
+app.get("/contact",function(req,res){
+    res.send('This is contact page')
+})
+
+app.listen(2000,function(){
+    console.log('server run.....');
+})
+*/
+
+
+
+
+
+/*===================================================== Route Middleware ===========================================*/
+/*note==>Route level =>route level holo kono specific rout er jonno execute hobe sobgulor jonno hobena*/
+
+
+/*
+var express = require('express');
+var app = express();
+
+
+app.get("/",function(req,res){
+    res.send('This is Home page')
+})
+
+
+
+//Route middleware
+app.use("/about",function(req,res,next){
+    console.log('I am about middleware');
+    next();
+})
+
+app.get("/about",function(req,res){
+    res.send('This is about page')
+})
+app.get("/contact",function(req,res){
+    res.send('This is contact page')
+})
+
+app.listen(3000,function(){
+    console.log('server run.....');
+})
+*/

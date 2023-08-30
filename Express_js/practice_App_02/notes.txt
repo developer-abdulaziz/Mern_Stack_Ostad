@@ -14,7 +14,17 @@ tahole multer npm use korte hobe
 ==> multer diye data mng korar jonno prothome amra var multer = require('multer') diye import kore nibo
 
 
+
+#### middleware
+----------------
+
 ===> Requeste er pore response er age j codegulo execute hoi segulo k e middleware bole
+
+===> akta middleware sobgulo response er jonnei kaj puro application jure seta k application middleware bole
+
+===> alada alada route er jonno alada alada middleware kaj korbe seta k amra bolbo route level
+
+
 // LInk
 https://www.npmjs.com/package/multer
 
