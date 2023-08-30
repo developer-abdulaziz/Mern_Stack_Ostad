@@ -176,6 +176,7 @@ app.listen(8010,function(){
 // taholei dekhbo j upload file a select kora valu uplod hoi gase
 //multer diye kivabe file upload korbo 
 
+/*
 var express = require('express');
 var multer = require('multer');
 
@@ -209,3 +210,4 @@ app.post("/",function(req,res){
 app.listen(4040,function(){
     console.log('server run.......');
 })
+*/

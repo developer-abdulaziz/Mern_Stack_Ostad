@@ -20,3 +20,9 @@ https://www.npmjs.com/package/multer
 
 // tutorial link
 https://youtu.be/0ftmtAGk86g?si=AI0YwINgWtS0KNQS
+
+
+// github link
+https://github.com/faisal2410/Express-js-tutorial-bangla
+https://github.com/faisal2410/express-server/blob/master/controllers/auth.js
+https://github.com/faisal2410/express-fundamentals/blob/master/file-upload.js
